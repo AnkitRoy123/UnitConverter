@@ -71,12 +71,12 @@ while True:
 
          if number == 1 and from_unit == "Meters" and to_unit == "Kilometer":
                 to_value = from_value / 1000
-                print(f"{from_value} {from_unit} = {to_value} {to_unit}")                
+                print(f"{from_value} {from_unit} = {to_value} {to_unit}") 
          elif number == 2 and from_unit == "Kilometer" and to_unit == "Meters":
                 to_value = from_value * 1000
                 print(f"{from_value} {from_unit} = {to_value} {to_unit}")
          elif number == 3 and from_unit == "Kilometer" and to_unit == "Mile":
-                to_value = from_value * 0.5
+                to_value = from_value / 1.5
                 print(f"{from_value} {from_unit} = {to_value} {to_unit}")
          elif number == 4 and from_unit == "Mile" and to_unit == "Kilometer":
               to_value = from_value * 1.5
@@ -135,16 +135,15 @@ while True:
          conversation_index = int(conversation) - 1
          number, from_unit, to_unit = weight_conversions[conversation_index]
          from_value = float(input(f"Enter the value in {from_unit}: "))
-         print()                 
+         print() 
          if number == 3 and from_unit == "Quintal" and to_unit == "Kilogram":
           to_value = from_value * 100
           print(f"{from_value} {from_unit} = {to_value} {to_unit}")
          elif number == 4 and from_unit == "Kilogram" and to_unit == "Quintal":
           to_value = from_value / 100
-          print(f"{from_value} {from_unit} = {to_value} {to_unit}")        
+          print(f"{from_value} {from_unit} = {to_value} {to_unit}") 
          elif ((number == 6 and from_unit == "Kilogram" and to_unit == "Tonne") or 
                (number == 2 and from_unit == "Gram" and to_unit == "Kilogram")):
-           if number in [6, 2]:
             to_value = from_value / 1000
             print(f"{from_value} {from_unit} = {to_value} {to_unit}")
          elif number == 7 and from_unit == "Kilogram" and to_unit == "Pound":
@@ -157,8 +156,6 @@ while True:
            (number == 10 and from_unit == "Milligram" and to_unit == "Microgram") or
            (number == 5 and from_unit == "Tonne" and to_unit == "Kilogram") or 
             (number == 1 and from_unit == "Kilogram" and to_unit == "Gram")):
-
-             if number in [1, 9, 5, 10]:
                to_value = from_value * 1000
                print(f"{from_value} {from_unit} = {to_value} {to_unit}")
 
@@ -193,16 +190,12 @@ while True:
                     (number == 2 and from_unit == "KB" and to_unit == "MB") or
                     (number == 3 and from_unit == "MB" and to_unit == "GB") or 
                     (number == 4 and from_unit == "GB" and to_unit == "TB")):
-
-              if number in [1, 2, 3, 4]:
-
                 to_value = from_value / 1024
                 print(f"{from_value} {from_unit} = {to_value} {to_unit}") 
            elif ((number == 5 and from_unit == "KB" and to_unit == "B") or 
             (number == 6 and from_unit == "MB" and to_unit == "KB") or
             (number == 7 and from_unit == "GB" and to_unit == "MB") or 
-            (number == 8 and from_unit == "TB" and to_unit == "GB")):
-            if number in [5, 6, 7, 8]:
+            (number == 8 and from_unit == "TB" and to_unit == "GB")):     
               to_value = from_value * 1024 
               print(f"{from_value} {from_unit} = {to_value} {to_unit}")
         except ValueError:
