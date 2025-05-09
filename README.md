@@ -1,2 +1,19 @@
 # UnitConverter
-This converter has 4 th many types of unit converter. Like -- temperature converter,  length converter,  weight converter,  digital storage converter. Temperature converter have 2 unit -- Celsius and Fahrenheit. Length converter and Weight converter has many units. Digital storage unit converter has 5 units --- B,  KB, MB, GB, TB.
+A fast and accurate command-line unit converter designed to handle common measurement conversions with ease. This tool supports conversions for length, temperature, and mass, making it ideal for developers, students, and anyone who works with different measurement systems.
+
+Features:
+Converts between major units of:
+
+Length (meters, kilometers, miles, feet, inches, etc.)
+
+Temperature (Celsius, Fahrenheit)
+
+Mass (grams, kilograms, pounds, ounces, etc.)
+
+Digital Unit(Bit, kilobyte, megabyte, etc)
+
+Simple CLI interface for quick access
+
+Lightweight, fast, and easy to use
+
+Accurate conversions without external dependencies
